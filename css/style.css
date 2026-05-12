@@ -2,20 +2,114 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    color: wheat
     
 }
 
-body {
+.body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 20px;
     line-height: 1.6;
     background-color: #333;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+    
+.productos,.nosotros,.contacto-form, .resenias-section{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.resenias-section {
+    padding: 80px 20px;
 }
 
-h1 {
-    color: wheat ;
-    border-bottom: 2px solid #007acc;
+.resenias-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.resenia-card {
+    padding: 30px;
+    border-radius: 12px;
+    width: 320px;
+    transition: transform 0.3s ease;
+}
+
+.resenia-card:hover {
+    transform: translateY(-5px);
+}
+
+.resenia-text {
+    font-style: italic;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.resenia-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.resenia-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.resenia-author h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.resenia-author span {
+    font-size: 13px;
+}
+
+.productos-section {
+    padding: 80px 20px;
+}
+
+.productos-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.productos-card {
+    padding: 30px;
+    border-radius: 12px;
+    width: 320px;
+    transition: transform 0.3s ease;
+}
+
+.productos-card:hover {
+    transform: translateY(-5px);
+}
+
+.productos-text {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+
+.header h1 {
+    display: inline-block;
     padding-bottom: 10px;
 }
 
@@ -23,4 +117,13 @@ h1 {
 list-style: none;
 display: flex;
 gap: 20px;
+}
+
+.footer, footer ul{
+list-style: none;
+gap: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }

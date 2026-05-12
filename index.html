@@ -4,12 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ 
     <title>ITSpot</title>
 
-    <body>
+    <body class="body">
     <header class="header">
                 <h1>ITSpot</h1>
-                <nav class="nav">
+                <nav class="nav ul">
                     <ul>
                     <li><a href="#productos" >Productos</a></li>
                     <li><a href="#nosotros" >Nosotros</a></li>
@@ -22,22 +26,103 @@
             <section>
 
 
-                <video>
+                <video autoplay muted loop playsinline width="1500px">
                         <source src="video/iphones.mp4" type="video/mp4" >
                 </video>
             
             </section>
             
-            <section id="productos">
+            <section class= "productos" id="productos">
                 <h2>Productos</h2>
-                <p> </p>
+                <p>Conocé nuestra amplia gama de productos Apple</p>
+    <div class="productos-container">
+        <div class="productos-card">
+            <p class="productos-text">
+                “Comprá tu próximo iphone 15”
+            </p>
+            <div class="productos-cards">
+                <img src="img/iphone 15.jpeg" width=200px alt="Producto 1">
+                <div>
+                    <h4>Iphone 15</h4>
+                </div>
+            </div>
+        </div>
+        <div class="productos-container">
+        <div class="productos-card">
+            <p class="productos-text">
+                “Comprá tu próximo iphone 16”
+            </p>
+            <div class="productos-cards">
+                <img src="img/iphone 16.jpeg" width=200px alt="Producto 2">
+                <div>
+                    <h4>Iphone 16</h4>
+                </div>
+            </div>
+        </div>
+        <div class="productos-container">
+        <div class="productos-card">
+            <p class="productos-text">
+                “Comprá tu próximo iphone 17”
+            </p>
+            <div class="productos-cards">
+                <img src="img/iphone 17.jpeg" width=200px alt="Producto 3">
+                <div>
+                    <h4>Iphone 17</h4>
+                </div>
+            </div>
+        </div>
+
             </section>
-            <section id="nosotros">
+            <section class="nosotros" id="nosotros">
                 <h2>Nosotros</h2>
-                <p> </p>
+                <p>Te acercamos productos Apple desde hace 15 años. Somos tu revendedor de confianza</p>
             </section>
 
-            <section id="#contacto">
+            <section class="resenias-section" id="resenias-section">
+        <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+    <div class="resenias-container">
+        <div class="resenia-card">
+            <p class="resenia-text">
+                “Excelente atención desde el primer día.”
+            </p>
+            <div class="resenia-author">
+                <img src="https://placehold.co/80x80" alt="Cliente 1">
+                <div>
+                    <h4>Marcos Sanchez</h4>
+                    <span>Cliente desde 2023</span>
+                </div>
+            </div>
+        </div>
+        <!-- Reseña 2 -->
+        <div class="resenia-card">
+            <p class="resenia-text">
+                “Muy recomendables.”
+            </p>
+            <div class="resenia-author">
+                <img src="https://placehold.co/80x80" alt="Cliente 2">
+                <div>
+                    <h4>Matias Peña</h4>
+                    <span>Compró Iphon 13</span>
+                </div>
+            </div>
+        </div>
+        <!-- Reseña 3 -->
+        <div class="resenia-card">
+            <p class="resenia-text">
+                “Servicio post-venta impecable. Siempre responden.”
+            </p>
+            <div class="resenia-author">
+                <img src="https://placehold.co/80x80" alt="Cliente 3">
+                <div>
+                    <h4>Santiago Rodriguez</h4>
+                    <span>Cliente desde hace años</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <section class="contacto-form" id="#contacto">
                 <h2>Contacto</h2>
                 <form action="https://formspree.io/f/xojygwrg" method="POST" enctype="multipart/form-data">
                 <label>Nombre:</label>
@@ -64,8 +149,18 @@
         </main>
         
 
-        <footer>
-            <h1>Footer</h1>
+        <footer class="footer">
+            <h2>ITSpot</h2>
+            <p>Productos Apple de calidad</p>
+            <div class="footer-box">
+            <h3>Enlaces</h3>
+
+            <ul class="footer ul">
+                <li><a href="#productos" >Productos</a></li>
+                <li><a href="nosotros" >Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
 
         </footer>
 

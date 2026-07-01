@@ -34,42 +34,42 @@
             <section class= "productos" id="productos">
                 <h2>Productos</h2>
                 <p>Conocé nuestra amplia gama de productos Apple</p>
-    <div class="productos-container">
-        <div class="productos-card">
-            <p class="productos-text">
-                “Comprá tu próximo iphone 15”
-            </p>
-            <div class="productos-cards">
-                <img src="img/iphone 15.jpeg" width=200px alt="Producto 1">
-                <div>
-                    <h4>Iphone 15</h4>
-                </div>
-            </div>
+       
+        <section class="productos-section" id="productos">
+
+    <h2 class="section-title">Tu próximo producto Apple</h2>
+
+    <div class="tienda-container">
+
+        <div class="productos-lista">
+            <h3>Productos disponibles</h3>
+            <ul id="lista-productos">
+            </ul>
         </div>
-        <div class="productos-container">
-        <div class="productos-card">
-            <p class="productos-text">
-                “Comprá tu próximo iphone 16”
-            </p>
-            <div class="productos-cards">
-                <img src="img/iphone 16.jpeg" width=200px alt="Producto 2">
-                <div>
-                    <h4>Iphone 16</h4>
-                </div>
+
+    
+        <aside class="carrito-box">
+            <h3>🛒 Tu carrito (<span id="cantidad-carrito">0</span>)</h3>
+
+            <ul id="items-carrito">
+
+            </ul>
+
+            <div class="carrito-total">
+                <span>Total:</span>
+                <strong id="total-carrito">$0</strong>
             </div>
-        </div>
-        <div class="productos-container">
-        <div class="productos-card">
-            <p class="productos-text">
-                “Comprá tu próximo iphone 17”
-            </p>
-            <div class="productos-cards">
-                <img src="img/iphone 17.jpeg" width=200px alt="Producto 3">
-                <div>
-                    <h4>Iphone 17</h4>
-                </div>
+
+            <div class="carrito-acciones">
+                <button id="btn-vaciar" class="btn-secundario">Vaciar</button>
+                <button id="btn-pagar" class="btn">Pagar</button>
             </div>
-        </div>
+
+            <p class="carrito-nota">* El pago es una demostración, no se procesa ningún cobro real.</p>
+        </aside>
+
+    </div>
+</section>
 
             </section>
             <section class="nosotros" id="nosotros">
@@ -162,6 +162,6 @@
         </div>
 
         </footer>
-
+        <script src="js/carrito.js"></script>
 </body>
 </html>
